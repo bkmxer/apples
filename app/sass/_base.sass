@@ -1,0 +1,88 @@
+@import "bourbon"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+h1
+  font-size: 70px
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	font-family: $default-font
+	overflow-x: hidden
+.fixed_head
+  margin-bottom: 50px
+img.side_photo
+  width: 100%
+h1.logo
+  font-family: "amatic"
+  margin: 0 auto
+.col-va
+  height: 70px
+  line-height: 70px
+.nav_element a
+  color: $default_color
+  text-decoration: none
+  padding: 5px 12px
+
+  &:hover, &.active
+
+    border-radius: 30px
+    background-color: $default_color
+    color: $black_section_default
+.nav_menu
+  display: flex
+  flex-wrap: nowrap
+  justify-content: space-between
+.nav_element
+
+header
+  padding-bottom: 50px
+section.black_statistics
+  background-color: $default_color
+  color: $black_section_default
+  background-image: url(img/path.png)
+  background-repeat: repeat-x
+  background-position: center 70%
+  background-size: auto 20%
+  padding: 20px 0
+  min-height: 300px
+.button
+  margin: auto 20px
+  color: $default_color
+  &:hover
+    text-decoration: none
+    color: lighten($default_color, 50%)
+.main_button
+  border-radius: 30px
+  background-color: $default_color
+  color: $black_section_default
+  padding: 10px 25px
+  &:hover
+    background-color: lighten($default_color, 50%)
+    color: $black_section_default
+.buttons
+  text-align: center
