@@ -33,6 +33,7 @@ body
 	line-height: 1.6
 	font-family: $default-font
 	overflow-x: hidden
+
 .fixed_head
   margin-bottom: 50px
 img.side_photo
@@ -46,18 +47,18 @@ h1.logo
 .nav_element a
   color: $default_color
   text-decoration: none
-  padding: 5px 12px
+  padding: 10px 15px
 
   &:hover, &.active
 
-    border-radius: 30px
+    border-radius: 40px
     background-color: $default_color
     color: $black_section_default
 .nav_menu
   display: flex
   flex-wrap: nowrap
   justify-content: space-between
-.nav_element
+
 
 header
   padding-bottom: 50px
@@ -85,11 +86,13 @@ section.black_statistics
     background-color: lighten($default_color, 50%)
     color: $black_section_default
 .buttons
+	margin-top: 50px
   text-align: center
+
 section.apple_features
   padding-top: 50px
 .features
-  width: 60%
+
   text-align: center
   display: block
   margin: 0 auto
@@ -121,7 +124,7 @@ section.apple_features
     right: 250px
     top: 600px
 section.with_video
-	position: absolute
+	position: relative
 	text-align: center
 video
 	position: relative
@@ -145,3 +148,16 @@ video
   padding: 20px
 	h1
 		margin: 0 auto
+
+section.cocktail
+	text-align: center
+.advantages
+	text-align: left
+	list-style: none
+	li
+		margin: 20px 0
+img.cocktail-pic
+	width: 180%
+.cocktail
+	.main_button
+		padding: 20px 50px
