@@ -7,11 +7,13 @@
 @import "media"
 section
   text-align: center
-  padding-bottom: 50px
+  padding-bottom: 70px
 h1, h2, h3, h4
   margin: 5px 0px
 section.apple_features
   padding-top: 50px
+a
+  cursor: pointer
 .features
 
   text-align: center
@@ -26,16 +28,17 @@ section.apple_features
   padding: 30px 50px
   border-radius: 30px
   background-color: rgba(255, 255, 255, 0.3)
+  min-width: 20%
   &:nth-of-type(2n)
     right: 5%
   &:nth-of-type(2n-1)
     left: 5%
   &:nth-of-type(1), &:nth-of-type(2)
-    top: 5%
+    top: 15%
   &:nth-of-type(5), &:nth-of-type(6)
-    top: 90%
+    top: 85%
   &:nth-of-type(3), &:nth-of-type(4)
-    top: 45%
+    top: 50%
 section.with_video
 	position: relative
 	text-align: center
@@ -103,7 +106,7 @@ section.result
     width: 100%
 .apple_features_wrapper
   position: relative
-footer
+.footer
   background-color: $default_color
   color: $black_section_default
   padding: 20px 0

@@ -36,6 +36,8 @@
 	</script>
 	<!-- Load Fonts CSS End -->
 
+
+
 	<!-- Load Custom CSS Start -->
 	<!--<Deject>--><script>loadCSS( "header.min.css?ver=1.0.0", false, "all" );</script><!--</Deject>-->
 	<script>loadCSS( "css/main.min.css?ver=1.0.0", false, "all" );</script>
@@ -63,22 +65,25 @@
 <body>
 
 <header>
-	<div class="header_wrapper">
-		<div class="container">
-			<div class="row fixed_head">
-				<div class=" col-sm-4 col-va"><h1 class="logo">Apples</h1></div>
-				<div class=" col-sm-8 col-va">
-					<div class="nav_menu">
-						<span class="nav_element"><a href="#" class="nav_link ">Home</a></span>
-						<span class="nav_element"><a href="#" class="nav_link">About</a></span>
-						<span class="nav_element"><a href="#" class="nav_link">Statistics</a></span>
-						<span class="nav_element"><a href="#" class="nav_link">Nutrition</a></span>
-						<span class="nav_element"><a href="#" class="nav_link">Store</a></span>
-												<span class="nav_element"><a href="#" class="nav_link">Contacts</a></span>
-					</div>
+	<div class="header_wrapper"><a name="home"></a>
+		<div class="row ">
+			<div class="fixed_head " id="fixed_head">
+			<div class=" col-sm-4 col-va"><h1 class="logo">Apples</h1></div>
+			<div class=" col-sm-8 col-va">
+				<div class="nav_menu">
+					<span class="nav_element "><a href="#home" class="nav_link nav_link_home active">Home</a></span>
+					<span class="nav_element"><a href="#Features"  class="nav_link nav_link_features">Features</a></span>
+					<span class="nav_element"><a href="#Statistics" class="nav_link nav_link_statistics">Statistics</a></span>
+					<span class="nav_element"><a href="#Nutrition" class="nav_link nav_link_nutrition">Nutrition</a></span>
+					<span class="nav_element"><a href="#Store" class="nav_link nav_link_store">Store</a></span>
+					<span class="nav_element"><a href="#Contacts" class="nav_link nav_link_contacts">Contacts</a></span>
 				</div>
 			</div>
-			<div class="row">
+			</div>
+		</div>
+		<div class="container">
+
+			<div class="row the_margined_first">
 				<div class="col-md-1 col-sm-0"></div>
 				<div class="col-md-5 col-sm-6">
 						<div class="description_block">
@@ -102,7 +107,7 @@
 		</div>
 	</div>
 </header>
-<section class="black_statistics">
+<section class="black_statistics" >
 	<div class="statistic_wrapper">
 		<div class="container">
 			<div class="row">
@@ -124,9 +129,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div><a name="features"></a>
 </section>
-<section class="apple_features">
+<section class="apple_features" id="Features">
 	<div class="apple_features_wrapper">
 		<div class="container">
 			<div class="row"> <div class="col-sm-1"></div>
@@ -154,7 +159,7 @@
 		</div>
 	</div>
 </section>
-<section class="with_video">
+<section id="Statistics" class="with_video"><a name="statistics"></a>
 	<video poster="img/nature.png"  id="bgvid" playsinline autoplay muted loop>
 	<source src="video/nature.mp4" type="video/mp4">
 </video>
@@ -164,9 +169,9 @@
 	<p>Some description telling about how cool nature is</p>
 
 	</div>
-
+<a name="nutrition"></a>
 </section>
-<section class="cocktail">
+<section class="cocktail"  id="Nutrition">
 	<div class="cocktail_section_wrap">
 		<div class="container">
 			<div class="row">
@@ -197,9 +202,9 @@
 			</div>
 
 		</div>
-	</div>
+	</div><a name="store"></a>
 </section>
-<section class="order">
+<section class="order"  id="Store">
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12">
@@ -298,7 +303,8 @@
 		</div>
 	</div>
 </section>
-<footer>
+
+<section id="Contacts" class="footer">
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
@@ -330,7 +336,7 @@
 			</div>
 		</div>
 	</div>
-</footer>
+</section>
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
