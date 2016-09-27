@@ -5,3 +5,121 @@
 //Custom styles here
 
 @import "media"
+section
+  text-align: center
+  padding-bottom: 50px
+h1, h2, h3, h4
+  margin: 5px 0px
+section.apple_features
+  padding-top: 50px
+.features
+
+  text-align: center
+  display: block
+  margin: 0 auto
+.apple_features_pic
+  width: 100%
+.around_apple_features
+  position: absolute
+  top: 450px
+  border: 2px solid $black_section_alternative
+  padding: 30px 50px
+  border-radius: 30px
+  background-color: rgba(255, 255, 255, 0.3)
+  &:nth-of-type(2n)
+    right: 5%
+  &:nth-of-type(2n-1)
+    left: 5%
+  &:nth-of-type(1), &:nth-of-type(2)
+    top: 5%
+  &:nth-of-type(5), &:nth-of-type(6)
+    top: 90%
+  &:nth-of-type(3), &:nth-of-type(4)
+    top: 45%
+section.with_video
+	position: relative
+	text-align: center
+video
+	position: relative
+	display: block
+	margin: 0 auto
+	max-width: 100%
+	text-align: center
+  min-height: 100%
+	width: auto
+  height: auto
+	z-index: -100
+  transform: translateX(-50%) translateY(-50%)
+
+.front-block
+	min-width: 200px
+	position: absolute
+	top: 20%
+	left: 50%
+	background-color: rgba(0, 0, 0, 0.6)
+	color: #FFF
+  padding: 20px
+	h1
+		margin: 0 auto
+
+section.cocktail
+	text-align: center
+.advantages
+	text-align: left
+	list-style: none
+	ul
+		margin-bottom: 50px
+	li
+		margin: 20px 0
+		display: flex
+		justify-content: space-between
+		border-bottom: 1px solid lighten($default_color, 80%)
+img.cocktail-pic
+	width: 180%
+.cocktail
+	.main_button
+		padding: 10px 30px
+section.order
+  text-align: center
+  padding-bottom: 50px
+.order_box
+  border: 1px solid lighten($default_color, 80%)
+  text-align: center
+  padding: 20px
+  margin-top: 20px
+  cursor: pointer
+  &:hover
+    background-color: lighten($black_section_alternative, 55%)
+    span.gray
+      color: red
+ul
+  list-style: none
+  padding: 0
+span.gray
+  color: lighten($default_color, 70%)
+section.result
+  padding-bottom: 100px
+  img
+    width: 100%
+.apple_features_wrapper
+  position: relative
+footer
+  background-color: $default_color
+  color: $black_section_default
+  padding: 20px 0
+  min-height: 200px
+
+.results_container
+  margin: auto
+  display: block
+  display:flex
+  flex-wrap: wrap
+  justify-content: space-around
+  .result_numbers
+    margin-top: 20px
+    display: inline-block
+    position: relative
+    width: 40%
+
+    .result_number
+      font-size: $accent_huge

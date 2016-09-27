@@ -71,10 +71,13 @@ section.black_statistics
   background-size: auto 20%
   padding: 20px 0
   min-height: 300px
+.button:focus
+	color: black
+	text-decoration: none
 .button
   margin: auto 20px
   color: $default_color
-  &:hover
+  &:hover, &:active
     text-decoration: none
     color: lighten($default_color, 50%)
 .main_button
@@ -85,79 +88,12 @@ section.black_statistics
   &:hover
     background-color: lighten($default_color, 50%)
     color: $black_section_default
+.main_button:focus,
+		text-decoration: none
+		color: $black_section_default
+
 .buttons
 	margin-top: 50px
   text-align: center
-
-section.apple_features
-  padding-top: 50px
-.features
-
-  text-align: center
-  display: block
-  margin: 0 auto
-.apple_features_pic
-  width: 100%
-.around_apple_features
-  position: absolute
-  top: 450px
-  border: 2px solid $black_section_alternative
-  padding: 10px 20px
-  border-radius: 30px
-
-  &:nth-of-type(1)
-    left: 250px
-    top: 300px
-  &:nth-of-type(2)
-    left: 200px
-    top: 450px
-  &:nth-of-type(3)
-    left: 250px
-    top: 600px
-  &:nth-of-type(4)
-    right: 250px
-    top: 300px
-  &:nth-of-type(5)
-    right: 200px
-    top: 450px
-  &:nth-of-type(6)
-    right: 250px
-    top: 600px
-section.with_video
-	position: relative
-	text-align: center
-video
-	position: relative
-	display: block
-	margin: 0 auto
-	max-width: 100%
-	text-align: center
-  min-height: 100%
-	width: auto
-  height: auto
-	z-index: -100
-  transform: translateX(-50%) translateY(-50%)
-
-.front-block
-	min-width: 200px
-	position: absolute
-	top: 20%
-	left: 50%
-	background-color: rgba(0, 0, 0, 0.6)
-	color: #FFF
-  padding: 20px
-	h1
-		margin: 0 auto
-
-section.cocktail
-	text-align: center
-.advantages
-	text-align: left
-	list-style: none
-	li
-		margin: 20px 0
-img.cocktail-pic
-	width: 180%
-.cocktail
-	.main_button
-		padding: 20px 50px
+	&:hover, &:active, &:visited, &:focus
+		text-decoration: none
