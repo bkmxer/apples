@@ -26,7 +26,7 @@ $(window).on('scroll', function () {
       $(this).addClass('active');
       nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
     }
-		
+
   });
 });
 
@@ -34,9 +34,12 @@ nav.find('a').on('click', function () {
   var $el = $(this)
     , id = $el.attr('href');
 
-  $('html, body').animate({
-    scrollTop: $(id).offset().top - nav_height
-  }, 700);
+  $('html, body').animate({ scrollTop: $(id).offset().top-nav_height }, 700);
 
   return false;
 });
+
+$('.order_box').hover(function(){
+    $('.order_box .button').removeClass("main_button");
+    $(this).find('a').addClass("main_button");
+})
