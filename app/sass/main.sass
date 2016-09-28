@@ -15,8 +15,10 @@ section.apple_features
   background-color: $black_section_default
 a
   cursor: pointer
-.features
+.hidden
+  display: none
 
+.features
   text-align: center
   display: block
   margin: 0 auto
@@ -60,7 +62,7 @@ video
 	min-width: 200px
 	position: absolute
 	top: 20%
-	left: 50%
+  max-width: 800px
 	background-color: rgba(0, 0, 0, 0.6)
 	color: #FFF
   padding: 20px
@@ -83,6 +85,7 @@ section.cocktail
 		border-bottom: 1px solid lighten($default_color, 80%)
 img.cocktail-pic
 	width: 180%
+  position: absolute
 .cocktail
 	.main_button
 		padding: 10px 30px
@@ -106,7 +109,7 @@ ul
 span.gray
   color: lighten($default_color, 70%)
 section.result
-  padding-bottom: 0
+  padding-bottom: 50px
   background-color: $black_section_default
   img
     width: 100%
@@ -117,10 +120,10 @@ section.result
   z-index: -105
   background-color: $default_color
   color: $black_section_default
-  padding: 20px 0
-  min-height: 200px
+  padding: 50px 0
   bottom: 10px
   width: 100%
+  min-height: 300px
 
 .results_container
   margin: auto
@@ -137,5 +140,11 @@ section.result
     .result_number
       font-size: $accent_huge
 section.transparent
-  min-height: 200px
+  min-height: 250px
   background-color: transparent
+.waved_background
+  background-color: transparent
+  background-image: url(../img/wave.png)
+  background-repeat: repeat-x
+  background-size: 4%
+  min-height: 50px

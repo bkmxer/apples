@@ -68,15 +68,15 @@
 	<div class="header_wrapper"><a name="home"></a>
 		<div class="row ">
 			<div class="fixed_head " id="fixed_head">
-			<div class=" col-sm-4 col-va"><h1 class="logo">Apples</h1></div>
-			<div class=" col-sm-8 col-va">
-				<div class="nav_menu">
+			<div class=" col-sm-4 col-va  hidden-xs"><h1 class="logo">Apples</h1></div>
+			<div class=" col-sm-8 col-va hidden-xs">
+				<div class="nav_menu ">
 					<span class="nav_element "><a href="#home" class="nav_link nav_link_home active">Home</a></span>
 					<span class="nav_element"><a href="#Features"  class="nav_link nav_link_features">Features</a></span>
 					<span class="nav_element"><a href="#Statistics" class="nav_link nav_link_statistics">Statistics</a></span>
 					<span class="nav_element"><a href="#Nutrition" class="nav_link nav_link_nutrition">Nutrition</a></span>
 					<span class="nav_element"><a href="#Store" class="nav_link nav_link_store">Store</a></span>
-					<span class="nav_element"><a href="#Contacts" class="nav_link nav_link_contacts">Contacts</a></span>
+					<span class="nav_element hidden-sm"><a href="#Contacts" class="nav_link nav_link_contacts">Contacts</a></span>
 				</div>
 			</div>
 			</div>
@@ -87,6 +87,7 @@
 				<div class="col-md-1 col-sm-0"></div>
 				<div class="col-md-5 col-sm-6">
 						<div class="description_block">
+							<h1 class="logo hidden-sm hidden-md hidden-lg">Apples</h1>
 							<h2><span class="promo_phrase">Try the new sort of well-known</span></h2>
 							<h5><span class="details">Get the best quality... apples</span></h5>
 							<p class="some_words">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat possimus dolor esse earum sunt optio, delectus ex cupiditate nihil, quidem alias. Illo modi ipsum id quidem eveniet repellendus asperiores similique.</p>
@@ -164,9 +165,9 @@
 	<source src="video/nature.mp4" type="video/mp4">
 </video>
 	<div class="front-block">
-	<h1>Header</h1>
+	<h2>Header</h2>
 
-	<p>Some description telling about how cool nature is</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eaque minus nostrum error quisquam corrupti quasi autem rem officiis pariatur similique odit temporibus sint, nesciunt quia voluptates iste sequi maxime.</p>
 
 	</div>
 <a name="nutrition"></a>
@@ -280,7 +281,7 @@
 			<div class="col-sm-6">
 			<div class="results_container">
 				<div class="result_numbers">
-					<span class="result_number">90</span>
+					<span class="result_number" id="counter"></span>
 					<div class="result_description">years of life</div>
 				</div>
 				<div class="result_numbers">
@@ -305,7 +306,9 @@
 			</div>
 		</div>
 	</div>
+
 </section>
+	<div class="waved_background"></div>
 <section class="transparent">
 
 </section>
@@ -313,7 +316,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-sm-4">
-				<ul>
+				<ul class="">
 					<li>one</li>
 					<li>two</li>
 					<li>three</li>
@@ -342,6 +345,28 @@
 		</div>
 	</div>
 </section>
+<div class="hidden">
+		<form  id="hidden_form">
+				<h2>Contact us</h2>
+				<label>
+					<span>Your name</span>
+					<input type="text" name="name">
+				</label>
+				<label>
+					<span>Your contact phone</span>
+					<input type="text" name="phone">
+				</label>
+				<label>
+					<span>Your desired subscription plan</span>
+					<select name="subscription_type">
+						<option>START</option>
+						<option>PLUS</option>
+						<option>UNLIMITED</option>
+					</select>
+				</label>
+				<button class="main_button">Submit</button>
+		</form>
+</div>
 	<!-- Optimized loading JS Start -->
 	<script>var scr = {"scripts":[
 		{"src" : "js/libs.min.js", "async" : false},
