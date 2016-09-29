@@ -22,6 +22,10 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'app'
 		},
+		tunnel: true,
+		host: 'localhost',
+		port: 3000,
+		logPrefix: "bkmxerFrontEnd",
 		notify: false
 	});
 });

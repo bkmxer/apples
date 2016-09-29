@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {}
+  if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {}
   else{
     if ($(this).scrollTop() > 10){
         $('.fixed_head').addClass("sticky");
@@ -74,3 +74,11 @@ function count(elem, startnum, endnum, time){
   },speed);
 
 }
+
+$(document).ready(function() {
+  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+    $('.wrap_to_hide_on_mobile').addClass('hidden');
+    $('.wrap_when_hidden_on_mobile').parent().removeClass('col-sm-6');
+
+  }
+})
