@@ -14,7 +14,7 @@
 			<!-- og:image - when reposting to socials -->
 		<meta property="og:image" content="path/to/image.jpg">
 		<!-- favicons for different screen sizes -->
-		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="shortcut icon" href="img/favicon/favicon1.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
@@ -169,7 +169,7 @@
 	<video poster="img/nature.png"  id="bgvid" playsinline autoplay muted loop>
 	<source src="video/nature.mp4" type="video/mp4">
 </video>
-	<div class="front-block">
+	<div class="front-block hidden animated ">
 	<h2>Header</h2>
 
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem eaque minus nostrum error quisquam corrupti quasi autem rem officiis pariatur similique odit temporibus sint, nesciunt quia voluptates iste sequi maxime.</p>
@@ -292,19 +292,21 @@
 			<div class="col-sm-6">
 			<div class="results_container">
 				<div class="result_numbers">
-					<span class="result_number" id="counter"></span>
+					<span class="result_number" id="years_counter"></span>
 					<div class="result_description">years of life</div>
 				</div>
 				<div class="result_numbers">
-					<span class="result_number">90</span>
-					<div class="result_description">years of life</div>
+					<span class="result_number " id="vitals_counter"></span>
+					<div class="result_description">vital elements</div>
 				</div>
+
 				<div class="result_numbers">
-					<span class="result_number">90</span>
-					<div class="result_description">years of life</div>
+					<span class="result_number" id="percent_counter"></span>
+					<div class="result_description">percent more energy</div>
 				</div>
+
 				<div class="result_numbers">
-					<span class="result_number">90</span>
+					<span class="result_number" id="food_counter"></span>
 					<div class="result_description">years of life</div>
 				</div>
 
